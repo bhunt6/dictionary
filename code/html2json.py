@@ -10,8 +10,7 @@ from freq_counts import freqCount
 from errata import err
 from errata import additions
 from related_words import allRelatedWords
-import json
-import pprint
+from time import gmtime, strftime
 
 class JsonEntry:
 
@@ -53,6 +52,7 @@ class JsonEntry:
         if(id in allRelatedWords):
             rel = allRelatedWords[id]
 
+        #f"<span class='tag {self.entry.pos.replace(" ", "")}Tag'>{self.entry.pos.upper()}</span>",
         self.entryObject = {"UUID":id,
             "search_word":list(set(self.entry.search)),
             "headword":self.entry.headword,
@@ -61,7 +61,7 @@ class JsonEntry:
             "ipa":self.entry.ipa,
             "jacobson":self.entry.coded_cyrillic,
             "source_pos":self.entry.part_of_speech,
-            "pos":f"<span class='tag {self.entry.pos.replace(" ", "")}Tag'>{self.entry.pos.upper()}</span>",
+            "pos":self.entry.pos,
             "tags":self.entry.tags,
             "gloss":self.entry.combined_english_gloss,
             "notes":note_list,
@@ -208,50 +208,81 @@ class JsonEntry:
         elif "particle" in pos:
             pos = "particle"
         return pos
-
+    
     def makeTags(self, notes, pos, headword):
-        chukotkan = "<span class='tag ChukotkanTag'>CHUKOTKAN</span>"
-        uncommon = "<span class='tag uncommonTag'>UNCOMMON</span>"
-        emoRoot = "<span class='tag emotionalTag'>EMOTIONAL</span>"
-        postRoot = "<span class='tag posturalTag'>POSTURAL</span>"
-        demoRoot = "<span class='tag dimensionalTag'>DIMENSIONAL</span>"
-        exclPart = "<span class='tag exclamatoryTag'>EXCLAMATORY</span>"
-        conjPart = "<span class='tag conjunctiveTag'>CONJUNCTIVE</span>"
-        interPart = "<span class='tag interjectionalTag'>INTERJECTIONAL</span>"
-        advPart = "<span class='tag adverbialTag'>ADVERBIAL</span>"
-        gamWord = "<span class='tag gambellWord'>SIVUQAQ</span>"
-        savWord = "<span class='tag savoongaWord'>SIVUNGAQ</span>"
-        #expressions?
-
-        tagList = ""
+        tagList = []
+        noteTags = {"Chukotkan":"chukotkan",
+                 "a Savoonga word":"savoonga",
+                "a Gambell word":"gambell"
+        }
+        posTags ={
+                "emotional",
+                "postural",
+                "dimensional",
+                "exclamatory",
+                "conjunctive",
+                "interjectional",
+                "adverbial"
+                }
 
         allNotes = " ".join([f'"{gloss}"' for gloss in notes])
         #if above some threshold frequency taglist += common
         if headword in freqCount:
             if freqCount[headword] < 10:
-                tagList+= uncommon 
-        if "Chukotkan" in allNotes:
-            tagList+= chukotkan
-        if "emotional" in pos:
-            tagList+= emoRoot
-        if "postural" in pos:
-            tagList+= postRoot
-        if "dimensional" in pos:
-            tagList+= demoRoot
-        if "exclamatory" in pos:
-            tagList+= exclPart
-        if "conjunctive" in pos:
-            tagList+= conjPart
-        if "interjectional" in pos:
-            tagList+= interPart
-        if "adverbial" in pos:
-            tagList+= advPart
-        if "a Savoonga word" in allNotes:
-            tagList+= savWord
-        if "a Gambell word" in allNotes:
-            tagList+= gamWord
+                tagList.append("uncommon")
+
+        for key in noteTags:
+            if key in allNotes:
+                tagList.append(noteTags[key])
+        for x in posTags:
+            if x in pos:
+                tagList.append(x)
         
         return tagList
+
+    # def makeTags(self, notes, pos, headword):
+    #     chukotkan = "<span class='tag ChukotkanTag'>CHUKOTKAN</span>"
+    #     uncommon = "<span class='tag uncommonTag'>UNCOMMON</span>"
+    #     emoRoot = "<span class='tag emotionalTag'>EMOTIONAL</span>"
+    #     postRoot = "<span class='tag posturalTag'>POSTURAL</span>"
+    #     demoRoot = "<span class='tag dimensionalTag'>DIMENSIONAL</span>"
+    #     exclPart = "<span class='tag exclamatoryTag'>EXCLAMATORY</span>"
+    #     conjPart = "<span class='tag conjunctiveTag'>CONJUNCTIVE</span>"
+    #     interPart = "<span class='tag interjectionalTag'>INTERJECTIONAL</span>"
+    #     advPart = "<span class='tag adverbialTag'>ADVERBIAL</span>"
+    #     gamWord = "<span class='tag gambellWord'>SIVUQAQ</span>"
+    #     savWord = "<span class='tag savoongaWord'>SIVUNGAQ</span>"
+    #     #expressions?
+
+    #     tagList = ""
+
+    #     allNotes = " ".join([f'"{gloss}"' for gloss in notes])
+    #     #if above some threshold frequency taglist += common
+    #     if headword in freqCount:
+    #         if freqCount[headword] < 10:
+    #             tagList+= uncommon 
+    #     if "Chukotkan" in allNotes:
+    #         tagList+= chukotkan
+    #     if "emotional" in pos:
+    #         tagList+= emoRoot
+    #     if "postural" in pos:
+    #         tagList+= postRoot
+    #     if "dimensional" in pos:
+    #         tagList+= demoRoot
+    #     if "exclamatory" in pos:
+    #         tagList+= exclPart
+    #     if "conjunctive" in pos:
+    #         tagList+= conjPart
+    #     if "interjectional" in pos:
+    #         tagList+= interPart
+    #     if "adverbial" in pos:
+    #         tagList+= advPart
+    #     if "a Savoonga word" in allNotes:
+    #         tagList+= savWord
+    #     if "a Gambell word" in allNotes:
+    #         tagList+= gamWord
+        
+    #     return tagList
     
     def searchWord(self, latin):
         result = []
@@ -304,7 +335,9 @@ if __name__ == "__main__":
     else:
         dictionary = HtmlDictionary(filename=sys.argv[1])
         html_tag_pattern = re.compile(r'<.*?>') #html tag regex
+        time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
         if len(sys.argv) == 2 or (len(sys.argv) == 3 and sys.argv[2] == '-'):
+            print(f"//Generated: {time}", sep="")
             print("var LEX = [", sep="")
             for html_entry in dictionary:
                 entry = Entry(html_entry)
@@ -312,10 +345,12 @@ if __name__ == "__main__":
                     output = JsonEntry(entry).entryObject
                     print(output, ",", sep="")
             if "post" not in sys.argv[1]:
-                print(additions)
+                for add in additions:
+                    print(f"{add},")
             print("];", sep="")
         else:
             with open(sys.argv[2], 'wt') as f:
+                print(f"//Generated: {time}", file=f, sep="")
                 print("var LEX = [", file=f, sep="")
                 for html_entry in dictionary:
                     entry = Entry(html_entry)
@@ -324,5 +359,5 @@ if __name__ == "__main__":
                         print(output, ",", file=f, sep="")
                 if "post" not in sys.argv[1]:
                     for addition in additions:
-                        print(addition, file=f)
+                        print(f"{addition},", file=f)
                 print("];", file=f, sep="")
