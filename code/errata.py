@@ -257,7 +257,6 @@ err = {
         #Date: 7/30/2025
         #Yupik Langauge Meeting
         #Editor: BH
-
     },
     "a3bfe6e854d0a0f910d97756989f3b3eb7124ed4":{
         #segneq/signeq/sagneq maybe all the same but clan variations
@@ -321,7 +320,10 @@ err = {
     },
     "1117be3f621329fc9b9a463662964ef598694bd4":{
         #might need to revisit semantics
-        #Amaghalek says maybe "slave" but doesn't seem to be same as 
+        #Amaghalek says maybe "slave" but doesn't seem to be same as ???
+        #Date: 7/30/2025
+        #Yupik Langauge Meeting
+        #Editor: BH
     },
     "90603de6dec4eea24571eed0415727ee76f5d2e9":{
         #add to gloss "born last year"
@@ -344,6 +346,12 @@ err = {
         #Date: 8/3/2025
         #Elicitation session with Giulia Soldati & Summer Chambers
         #Editor: BH
+    },
+    "6117a715ebd09c75ba9add323631b0ba76389e88":{
+        #Speaker source: Ukaall
+        #Date: 8/8/2025
+        #Editor: BH
+        'gloss': ['to fade', 'to discolor', 'to erase (of writing) with an eraser', 'to calm down after anger', 'to have the dirt get washed out']
     }
 }
 #natmun has incorrect parse > "natmun + natmun"
@@ -352,106 +360,37 @@ err = {
 ##naagu, nani
 #two entries for leghni "rotten odor"; aec6dbf526ed350ed636bba6edc78757c891646a and 3fa5f7ada3d27d129d03e7bef204d625b76b5e0b
 
-#Words of the day from Lodge
-#2007
-#1) kepsiiq - to serve (4a11daf247d6d2dd730b5f3b9c5889a9c66ceed5)
-#2) lliighaq (not found, but present in etymologies of 40adfd9d33273036e3c61880d937c20abf953d17 and 8683431ce772aea09dac347e9846572ac1863600)
-#2b) allngik - to repair or patch (e3e71171ed1b6079e6254c06d44f43113d388a20)
-#2c) avii - ringing in the ear (5ff350f470b180f9f8423316cde61eb3c9eff26d)
-#3) kawutaaq - (not found)
-#4) nuupniq - when the wind is blowing and suddenly stops and starts up again (from 93755eb217ea3fdae5dc1268eccdb09bd6c4aa06)
-#5) talafkiq - (not found)
-#6) uyenqaq - to dance (primarily with the neck) to a beat or music (not found)
-#7) yit/yita - to correct or scold (maybe 5176ab4e21a12e3a53f3ed8594edefa2a07d8b39 ?)
-#7b) awen'ghaka - friend (maybe related to 7bf1cf61146d0c2eaf1c84e9c539af3baa1c5418 ?)
-#8) yapela - being humble (maybe 86ad81045fdf80c872ea7a7a3e3946331e8c620c ?)
-#9) sayuulnga (maybe 388f3d173127b6e42f9ae3a43695c752d350ece4 ?)
-#10) aksigu - to trim an oil lamp (dcf67501590716c341bd4966fc8ca7b7abbc9e46)
-#10b) siinu - cold storage area (96f3ea8bf859ebda481587a36a114c0486805fd6)
-#10c) aagra - inner living area (e0e5a1cbefabc71570ab4d654bb16c2ce304df04)
-#11) peraaq - favorable conditions for hunting (maybe 6c9304cd4cc75263b9f751e601ffb25386688d52 ?)
-#11b) afkuuyaq - problem (7ebb5db6c29649428d59b6838f63fd41939cdbb3)
-#12) yagugta - to temporarily hang wet clothing on something (not found)
-
-#2008
-#1) sighyak - (maybe ef5e34c1a7f697cbc64602d92a7f5f62566012ee ?)
-#2) kegwaayi - (33bc0f18bad086c638e570f45bb2e106e0de583b)
-#3) nan'ghaali - (not found)
-#4) aghuuqi - (maybe from ab46838aaf70787b621821a4db00c3f1459266c1 ?)
-#5) aghsaghneghqituq/aghsaghneghqilnguq - (maybe from 4005ad28a5f448814fb62aebdb01fda4ca5a90a2 or f349b66bd0d6bd5eab30d373cad15b900dd4edd3)
-#6) qayeri - (maybe c7c6a3cb18331d3ef7718b25546d145a1d47ce0a ?)
-#7) siqsiimi(naq) - (from df8eacad394199112fea6a85d38360e2700f254b ?)
-#8) aghsamesiingisa - (maybe from 4005ad28a5f448814fb62aebdb01fda4ca5a90a2 or f349b66bd0d6bd5eab30d373cad15b900dd4edd3)
-#9) elengtuq - (not found)
-#10) ghhavik - (maybe related to 04432ed986202a9801515e7a54d05762d23cd173 ?)
-
-#2009
-#1) avii - repeat (5ff350f470b180f9f8423316cde61eb3c9eff26d)
-#1b) luughek - (maybe from 11b774777a849f5baa747f736d3aa0a879041033 ?)
-#1c) pagsiinga - (9d2d970d88ab1fcd4e88403f6d8932ace44be249)
-#2) qetaawallu - expressing disgust over false accusation "eslaaghta/ayemqutek"; used in expression - "qetaawallu maaten"
-#3) iviilu - side pain (maybe metaphoric extension from b7fc050f35d5d2918b92b790a855e9db7bf71b1d ?)
-#4) itghuq - (not found)
-#5) uguquma - (not found)
-#6) yapela - (86ad81045fdf80c872ea7a7a3e3946331e8c620c)
-#7) aaghlu - (adb47a3885227f5645ac9f4486801c2ae2de8c26)
-#8) ngevreqiniitaaq - (related to d6395761b2d5c7edf48a9a1cc04d4af6e2925481 ?)
-#9) qulaghwaaq - (related to ffe209cd7949c37ea6f7aa13566316f6c485112c ?)
-#10) uupta - burst of crying (6dc50d53a2ad1169c7a04c0599b51ad3be3a83b3)
-#11) neghaali - (779ee9f50c4f1eb50ecfda75ea7e2ff23d5c4b32)
-#12) akulghaaq - (singular of b5de786fbf1f764c430ca8d6a7d27f92b2b442bb)
-#12b) saluk - (from a3df395e2cc6a0da15208101a36cf16964761b01)
-#12c) ikwaaqu - (25d72a554e07c4071711bc0fa75c902f48099fc6)
-#12d) yagugta - (related to 9721e7983df9b4faf03a2ee1b53a9ddd05d4f162 ?)
-
-#2010
-#1) iilvaq - (2f6476fb3b231ab97b7bc31771dbe00e16518a6b)
-#2) sanightaaq - (86dec4ab7c18d1264d2aaac586541b24947acb3e) but maybe not specifically a women's garment
-#2b) qeteghruk - (4d01609a69d4d0b7fdbbbc94e69608de4aef8db4 or 16ef53c9906d6ca19cce501a46e7d4699bbe9323) 
-#3) pukan'ghuut - (maybe from ba222807840c02de566e4c03b47ea4a718ba993a ?)
-#4) quutfaq - (ad6919d65b196cc13c655765cb7ff8e78eef8210)
-#4b) paywaaqa
-#5) iyangisuk
-#6) siikaq
-#7) waniwanllu - "on the contrary" cf. giniwan
-#7b) inegreqi
-#8) qetaawallu
-#9) sunglugtuq
-#10) masisu - (bfdd012cba66f2dcf04bb39c22b2dc647d8c29c2) "moreover" is better def
-#10b) teggeq - (98fd6c37d9f8ca6fc2a51b3002a6955cc4fbaa5a) maybe a specific species?
-
-#2011
-#1) akiitaq
-#2) suyeghtaq - (maybe from 498a30703d57008c35e8f9464556929eee4ecbf8)
-#3) qallaquk
-#3b) sivugnaq - a point a few miles East of Gambell used as reference (bead4204bf40b6f260c2423eaed7a37532c4ac5c)
-#4) masughta - (maybe from e41399f3a7c6cb159f387b11ea8a121fafc293d3 ?)
-#5) kumlulquyak -(29b5bc979edab05d07c17b9cfed2b9aad21e4860) long or short U in second syllable?
-#6) quprughneq
-#7) hik/hig
-#8) puggsaqa
-#8b) nutaghin
-#9) imeseghetaq
-#10) sallggaaq
-#11) taaggaghta
-#11b) llet
-
-#2012
-#1) mughaq 
-#1b) niighiq - (25fad77fb2fb9d8d45f45fc7b9552433e5480ab2)
-#2) qaqiightaq
-#2b) saqisleq
-#3) siinu - (96f3ea8bf859ebda481587a36a114c0486805fd6)
-#4) aagra -(e0e5a1cbefabc71570ab4d654bb16c2ce304df04)
-#5) ghhughtughwaaq
-#5b) qelaataq - (from 82799783fa1f5df32a7c9c41f0e25a3d25134968)
-#6) reqiigpaglleghek 
-#7) kanaviighun - (maybe from 048960fddd7f749e8cbb4824ff7e2f2a2c8ff4a3 or even 'kana' - downward)
-#8) imeseregat
-
 #words from Ukaall
 #killeq - clotted wound; scab
 #gheve - [add sense] to erase (of writing); to erase with an eraser
+
+    # {
+    # #addition 000000
+    # #Editor: Who added this entry
+    # #Source: The speaker/s or resource from which the word was sourced
+    # #Date: The date this entry was added to this list
+    #     "UUID":"",
+    #     "search_word":[""],
+    #     "headword":"",
+    #     "root":[""],
+    #     "cyrillic":"",
+    #     "ipa":[""],
+    #     "jacobson":"",
+    #     "source_pos":"",
+    #     "pos":"",
+    #     "tags":"",
+    #     "gloss":[""],
+    #     "notes":[],
+    #     "examples":[],
+    #     "source":"",
+    #     "etymology":"",
+    #     "semantic_code":"LI",
+    #     "postbase_head_form":"",                     
+    #     "postbase_alphabetization_form":"",
+    #     "alphaA":"ughfik",
+    #     "alphaB":"ughfik",
+    #     "related_words":[''],
+    # },
 
 additions = [
     {
@@ -467,8 +406,8 @@ additions = [
         "ipa":["uχfik"],
         "jacobson":"",
         "source_pos":"noun",
-        "pos":"<span class='tag nounTag'>NOUN</span>",
-        "tags":"",
+        "pos":"noun",
+        "tags":[],
         "gloss":["bathroom", "pants zipper"],
         "notes":[],
         "examples":[],
@@ -483,6 +422,10 @@ additions = [
         #['bathroom', 'bathtub', 'tub', 'place to take a bath', 'to bathe', 'pants zipper', 'zipper', 'pants', 'crotch of pants', 'seat of pants']
     },
     {
+    #addition 000002
+    #Editor: BH
+    #Source: Beulah Nowpakahok
+    #Date: 7/30/2025
         "UUID":"000002",
         "search_word":["qepghaghta", "qepghaghte"],
         "headword": "qepghaghta",
@@ -491,12 +434,12 @@ additions = [
         "ipa":["qəpχɑχtɑ"],
         "jacobson":"",
         "source_pos":"noun",
-        "pos":"<span class='tag nounTag'>NOUN</span>",
-        "tags":"",
+        "pos":"noun",
+        "tags":[],
         "gloss": ["worker", "servant"],
         "notes":[],
         "examples":["<span class='yupik_ex'>Iwernga umiilgan pikaa, ‘Uyuq seghleq, ighsanitalghii qepghaghta!’...</span><span class='english_ex'>‘His master replied, ‘‘You wicked, lazy servant!’’...’</span><a href='about.html#exRefs'><span class='citation'>Matt 25.26</span></a>"],
-        "source":"", #Tasi and Beulah (How should they be cited? Or maybe cite the language group and Kaalguq)
+        "source":"", #Beulah
         "etymology":"",
         "semantic_code":"SLI",
         "postbase_head_form":"",                     
@@ -506,6 +449,10 @@ additions = [
         "related_words":[]
     },
     {
+    #addition 000003
+    #Editor: BH
+    #Source: Beulah Nowpakahok
+    #Date: 7/30/2025
         "UUID":"000003",
         "search_word":["qepghaghtelaaq", "qepghaghtelaagh"],
         "headword": "qepghaghtelaaq",
@@ -514,12 +461,12 @@ additions = [
         "ipa":["qəpχɑχtəlɑːq"],
         "jacobson":"",
         "source_pos":"noun",
-        "pos":"<span class='tag nounTag'>NOUN</span>",
-        "tags":"",
-        "gloss": "slave",
+        "pos":"noun",
+        "tags":[],
+        "gloss": ["slave"],
         "notes":["Used in Bible to refer to slaves (and indentured servants?)"],
-        "examples":["<span class='yupik_ex'>Qepghaghtelaaq negllugutenisaghqaanghituq quunperugllak.</span><span class='english_ex'>‘Now a slave has no permanent place in the family, but a son belongs to it forever.’</span><a href='about.html#exRefs'><span class='citation'>John 8.35</span></a>"],
-        "source":"", #Tasi and Beulah (How should they be cited? Or maybe cite the language group and Kaalguq)
+        "examples":["<span class='yupik_ex'>Qepghaghtelaaq negllugutenisaghqaanghituq quunperugllak. Iwernga nengllugutet ighneghat ellngitnisaghqaaguq quunperugllak.</span><span class='english_ex'>‘Now a slave has no permanent place in the family, but a son belongs to it forever.’</span><a href='about.html#exRefs'><span class='citation'>John 8.35</span></a>"],
+        "source":"", #Beulah
         "etymology":"< qepghaghte + -laaq",
         "semantic_code":"SLI",
         "postbase_head_form":"",                     
@@ -529,3 +476,56 @@ additions = [
         "related_words":[]
     }
 ]
+
+#Not Found
+# "Iliighaq"	        to repair or patch
+# "Kawutaaq"	        has to do with shamanism
+# "Talafkiq"	        1) to temporarily lash on to something 2) to temporarily repair something that is broken
+# "uyenqaq"             to dance (primarily with the neck) to a beat or music
+# "Yagugta"	            to temporarily hang wet clothing on something in order to hang later in a dry rack
+# "Nan'ghaali"	        to subside
+# "Elengtuq"	        ???
+# "whangaatuq"          ???
+# "Qetaawallu"	        expressing disgust over false accusation Eslaaghta/Ayemqutak
+# "Taawallu maaten"	    expressing disgust over false accusation Eslaaghta/Ayemqutak
+# "Eslaaghta"	        expressing disgust over false accusation Eslaaghta/Ayemqutak
+# "Itghuq"	            affliction or convulsing in dogs
+# "Uguquma"	            compliment for doing things right away without any complaints or hesitation, instantly
+# "Iyangisuk"	        loss of eyesight due to injury
+# "Inegreqi"	        when an infant gets too accustomed in caretakers arms
+# "Qetaawallu"	        for crying out loud
+# "Akiitaaq"	        slush ice that formed into ice cakes that still has no integrity
+# "Taaggaghta"	        sudden clearing of weather
+# "Llet"	            wanting, envy
+# "Mughaq"	            work hard to achieve goal
+# "Saqisleq"	        at least bring some food
+# "Ghhughtughwaaq"	    oval form, streamline
+# "Reqiigpaglleghek"	odd open water (askew)
+
+
+#Maybes
+# yit/yita              to correct or scold (maybe 5176ab4e21a12e3a53f3ed8594edefa2a07d8b39 ?)
+# awen'ghaka            friend (maybe related to 7bf1cf61146d0c2eaf1c84e9c539af3baa1c5418 ?)
+# yapela                being humble (maybe 86ad81045fdf80c872ea7a7a3e3946331e8c620c ?)
+# sayuulnga             (maybe 388f3d173127b6e42f9ae3a43695c752d350ece4 ?)
+# peraaq                favorable conditions for hunting (maybe 6c9304cd4cc75263b9f751e601ffb25386688d52 ?)
+# sighyak               (maybe ef5e34c1a7f697cbc64602d92a7f5f62566012ee ?)
+# aghuuqi               (maybe from ab46838aaf70787b621821a4db00c3f1459266c1 ?)
+# aghsaghneghqituq      (maybe from 4005ad28a5f448814fb62aebdb01fda4ca5a90a2 or f349b66bd0d6bd5eab30d373cad15b900dd4edd3)
+# aghsaghneghqilnguq    (maybe from 4005ad28a5f448814fb62aebdb01fda4ca5a90a2 or f349b66bd0d6bd5eab30d373cad15b900dd4edd3)
+# qayeri                (maybe c7c6a3cb18331d3ef7718b25546d145a1d47ce0a ?)
+# siqsiimi(naq)         (from df8eacad394199112fea6a85d38360e2700f254b ?)
+# aghsamesiingisa       (maybe from 4005ad28a5f448814fb62aebdb01fda4ca5a90a2 or f349b66bd0d6bd5eab30d373cad15b900dd4edd3)
+# ghhavik               (maybe related to 04432ed986202a9801515e7a54d05762d23cd173 ?)
+# luughek               (maybe from 11b774777a849f5baa747f736d3aa0a879041033 ?)
+# iviilu                side pain (maybe metaphoric extension from b7fc050f35d5d2918b92b790a855e9db7bf71b1d ?)
+# ngevreqiniitaaq       (related to d6395761b2d5c7edf48a9a1cc04d4af6e2925481 ?)
+# qulaghwaaq            (related to ffe209cd7949c37ea6f7aa13566316f6c485112c ?)
+# yagugta               (related to 9721e7983df9b4faf03a2ee1b53a9ddd05d4f162 ?)
+# pukan'ghuut           (maybe from ba222807840c02de566e4c03b47ea4a718ba993a ?)
+# qallaquk              (maybe related to 00936f9271cd6ae1e4504a95e77b5f9b916cefae ?)
+# masughta              (maybe from e41399f3a7c6cb159f387b11ea8a121fafc293d3 ?)
+# hik/hig               (maybe 5fa674916a859f41b5757ae20909bc6b3e9b7465 ?)
+# niighi                (maybe 4ac77056a5e2e7d4ee629c68e6870952c29ed641 or bec4854e1cff94aa1e196c14c9a251bf601f54b6)
+# kanaviighun           (maybe from 048960fddd7f749e8cbb4824ff7e2f2a2c8ff4a3 or even 'kana' - downward)
+# imeseregat            (maybe alt of f9fa228e75429ac5f61687de29c5a94ff8aacb38 ?)
